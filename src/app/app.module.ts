@@ -11,6 +11,8 @@ import { HeroChildComponent } from './hero-child/hero-child.component';
 import { HeroComponent } from './hero/hero.component';
 import { NameChildComponent } from './name/name-child.component';
 import { NameParentComponent } from './name/name-parent.component';
+import { VersionChildComponent } from './version/version-child.component';
+import { VersionParentComponent } from './version/version-parent.component';
 
 @NgModule({
   imports: [
@@ -28,7 +30,9 @@ import { NameParentComponent } from './name/name-parent.component';
     HeroChildComponent,
     HeroComponent,
     NameChildComponent,
-    NameParentComponent
+    NameParentComponent,
+    VersionChildComponent,
+    VersionParentComponent,
   ],
   bootstrap: [
     AppComponent
