@@ -1,16 +1,17 @@
 import { Component, OnChanges, SimpleChanges } from '@angular/core';
 
-const TEMPLATE = `
-  <h2>Source code version</h2>
-  <button (click)="newMajor">New minor version</button>  
-  <button>New major version</button>
-  <app-version-child [major]="major" [minor]="minor"></app-version-child>
-`
+
 
 @Component({
   selector: 'app-version-parent',
   //template: ``
-  template: TEMPLATE
+  template: `
+  <h2>Source code version</h2>
+  
+  <button type="button" (click)="newMinor()">New minor version</button>  
+  <button type="button" (click)="newMajor()">New major version</button>
+  <app-version-child [major]="major" [minor]="minor"></app-version-child>
+  `
 })
 export class VersionParentComponent {
   // ngOnChanges(changes: SimpleChanges): void {
